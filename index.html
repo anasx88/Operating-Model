@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المسار المهني المقترح - أنس العضيبي</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;--ink:#172033;--muted:#64748b;--card:#fff;--line:#d7deea;
+      --primary:#12324f;--secondary:#0f766e;--accent:#b88214;--soft:#eef6f7;
+      --risk:#fff7ed;--comp:#eef2ff;--gov:#ecfdf5;--ops:#f8fafc;--crowd:#fdf2f8;
+      --shadow:0 14px 34px rgba(15,35,55,.10)
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.9;direction:rtl;text-align:right}
+    .page{max-width:1240px;margin:auto;padding:26px 18px 70px}
+    .hero{background:linear-gradient(135deg,#12324f,#0f766e);color:white;border-radius:28px;padding:36px 40px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;left:-110px;top:-110px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.10)}
+    .hero h1{margin:0 0 12px;font-size:34px;line-height:1.35;font-weight:900}.hero p{font-size:18px;margin:0;max-width:1050px}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.pill{padding:8px 14px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.14);border-radius:999px;font-size:14px}
+    .section{background:var(--card);border:1px solid var(--line);border-radius:24px;margin-top:24px;padding:26px;box-shadow:0 10px 24px rgba(15,35,55,.055)}
+    h2{margin:0 0 16px;color:var(--primary);font-size:25px;border-right:6px solid var(--accent);padding-right:12px}h3{margin:18px 0 10px;color:#0f3b57;font-size:20px}.lead{font-size:17px;color:#273449;margin-top:0}.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .box{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fff}.box strong{color:#102f4d}.box .num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--secondary);color:white;font-weight:800;margin-left:8px}
+    .roadmap{display:flex;flex-direction:row;gap:14px;align-items:stretch;justify-content:space-between;margin-top:18px;direction:rtl}.step{flex:1;min-width:0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;position:relative;box-shadow:0 8px 18px rgba(15,35,55,.05)}.step:not(:last-child):after{content:"←";position:absolute;left:-14px;top:45%;transform:translateY(-50%);background:var(--primary);color:white;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;z-index:2}.step small{color:var(--muted);display:block}.step .tag{display:inline-block;border-radius:999px;background:var(--soft);padding:3px 9px;font-size:12px;color:#0f766e;margin-bottom:8px}.step h3{margin:4px 0 5px;font-size:17px;color:#0f2d47}
+    table{width:100%;border-collapse:collapse;margin:16px 0;direction:rtl;text-align:right;border-radius:14px;overflow:hidden}th,td{border:1px solid var(--line);padding:12px 14px;vertical-align:top}th{background:#12324f;color:#fff;font-weight:800}tr:nth-child(even) td{background:#f8fafc}
+    .station{border:1px solid var(--line);border-radius:22px;margin-top:20px;overflow:hidden;background:#fff}.stationHead{display:flex;align-items:center;gap:14px;background:#f8fafc;padding:18px 20px;border-bottom:1px solid var(--line)}.badge{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#12324f,#0f766e);color:white;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:20px}.stationHead h3{margin:0;color:#12324f}.stationBody{padding:20px}.kv{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.kv .mini{border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;min-height:210px}.mini b{display:block;color:#0f3b57;margin-bottom:6px}.mini ul{margin:8px 0 0;padding-right:20px}.mini li{margin-bottom:6px}
+    .why{background:#fff7ed;border-right:6px solid #f59e0b;padding:16px;border-radius:16px;margin:16px 0}.ok{background:#ecfdf5;border-right:6px solid #10b981;padding:16px;border-radius:16px;margin:16px 0}.decision{background:#f8fafc;border:2px dashed #94a3b8;padding:18px;border-radius:18px}.timeline{position:relative;margin-top:12px}.month{display:grid;grid-template-columns:130px 1fr;gap:14px;margin-bottom:12px;align-items:stretch}.month .m{background:#12324f;color:white;border-radius:16px;padding:14px;font-weight:800;text-align:center}.month .d{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px}.footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+    ul{margin-top:8px;padding-right:24px}
+    .mobileSeq{display:none}
+    .seqCard{border:1px solid var(--line);border-radius:18px;padding:16px;background:#fff;margin:12px 0;box-shadow:0 8px 18px rgba(15,35,55,.045)}
+    .seqCard h3{margin:0 0 10px;color:#12324f;font-size:20px;border-right:5px solid var(--accent);padding-right:10px}
+    .seqItem{background:#f8fafc;border:1px solid #e5eaf3;border-radius:14px;padding:12px;margin-top:10px}
+    .seqItem b{display:block;color:#0f3b57;margin-bottom:4px}
+    .resultFlow{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;align-items:stretch;margin-top:16px;direction:rtl}
+    .flowNode{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center;font-weight:800;color:#12324f;position:relative;min-height:82px;display:flex;align-items:center;justify-content:center}
+    .flowNode:not(:last-child):after{content:"←";position:absolute;left:-14px;top:50%;transform:translateY(-50%);background:var(--secondary);color:#fff;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2}
+    @media(max-width:980px){
+      .grid,.grid2,.kv{grid-template-columns:1fr}.roadmap{flex-direction:column}.step:not(:last-child):after{content:"↓";left:50%;top:auto;bottom:-16px;transform:translateX(-50%)}.month{grid-template-columns:1fr}.hero h1{font-size:27px}
+      table.responsiveTable{display:none}.mobileSeq{display:block}.section{padding:20px}.hero{padding:28px 22px}.page{padding:18px 12px 60px}.resultFlow{grid-template-columns:1fr}.flowNode:not(:last-child):after{content:"↓";left:50%;top:auto;bottom:-16px;transform:translateX(-50%)}
+    }
+    @media print{body{background:white}.page{max-width:none}.section,.hero{box-shadow:none}.roadmap,.station{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>المسار التنفيذي للتأهيل المهني في الحوكمة والامتثال والمخاطر وإدارة الحشود</h1>
+      <p>تصور مهني لتحويل الشهادات من إنجاز فردي إلى قدرة مؤسسية قابلة للتطبيق داخل العمل: سياسات، إجراءات، مخاطر، امتثال، حوكمة، نموذج تشغيل، وتطبيق تخصصي في إدارة الحشود.</p>
+      <div class="meta">
+        <span class="pill">إعداد: أنس العضيبي</span>
+        <span class="pill">الغرض: مقترح تأهيلي تنفيذي</span>
+        <span class="pill">المنهج: معرفة + تطبيق + قالب + أثر</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>1) الملخص التنفيذي</h2>
+      <p class="lead">الهدف من هذا المسار ليس تجميع شهادات، بل بناء قدرة مهنية مشتركة تساعد على تصميم منظومات العمل داخل الجهة. يبدأ المسار بفهم العلاقة بين الحوكمة والمخاطر والامتثال، ثم يعمّق المخاطر، ثم الامتثال، ثم الحوكمة المؤسسية، ثم يحول ذلك إلى نموذج تشغيل قابل للتطبيق، وأخيراً يطبق المعرفة على إدارة الحشود كملف ميداني عالي الأهمية.</p>
+      <div class="grid">
+        <div class="box"><span class="num">1</span><strong>منطق المسار</strong><br>كل مرحلة تمهّد للتي بعدها؛ لذلك لا يتم التعامل مع الشهادات كدورات منفصلة، بل كطبقات بناء متتابعة.</div>
+        <div class="box"><span class="num">2</span><strong>القيمة المؤسسية</strong><br>المسار ينتج أدوات عمل داخلية: إطار حوكمة، سجل مخاطر، مصفوفة امتثال، نموذج تشغيل، ودليل إدارة حشود.</div>
+        <div class="box"><span class="num">3</span><strong>التميّز المهني</strong><br>المخرج النهائي ليس موظفاً يحمل شهادة، بل شخص قادر على تصميم منظومة عمل وربط القرار بالتنفيذ والقياس.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>2) خريطة المسار</h2>
+      <div class="roadmap">
+        <div class="step"><span class="tag">الأساس</span><h3>GRCP</h3><small>حوكمة + مخاطر + امتثال</small></div>
+        <div class="step"><span class="tag">التخصص الأول</span><h3>ISO 31000</h3><small>إدارة المخاطر</small></div>
+        <div class="step"><span class="tag">التخصص الثاني</span><h3>ISO 37301</h3><small>إدارة الامتثال</small></div>
+        <div class="step"><span class="tag">الحوكمة المتقدمة</span><h3>ISO 37000</h3><small>حوكمة المنظمات</small></div>
+        <div class="step"><span class="tag">الاحتراف</span><h3>Operating Model</h3><small>هندسة النموذج التشغيلي</small></div>
+        <div class="step"><span class="tag">تطبيق تخصصي</span><h3>إدارة الحشود</h3><small>تطبيق على الحج/العمرة/الفعاليات</small></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>3) لماذا هذا التسلسل هو الأفضل؟</h2>
+      <p class="lead">هذا الترتيب مبني على منطق التعلم والتطبيق. لا يمكن بناء إدارة حشود ناضجة دون مخاطر، ولا يمكن بناء مخاطر فعالة دون حوكمة وامتثال، ولا يمكن تحويل الحوكمة إلى أثر دون نموذج تشغيل.</p>
+      <table class="responsiveTable">
+        <thead><tr><th>الترتيب</th><th>لماذا يأتي هنا؟</th><th>كيف يجعل المرحلة التالية أسهل؟</th><th>الخطر إذا تجاوزناه</th></tr></thead>
+        <tbody>
+          <tr><td>GRCP</td><td>يعطي الصورة العامة للعلاقة بين الحوكمة والمخاطر والامتثال.</td><td>يجعل دراسة المخاطر والامتثال مفهومة ضمن سياق واحد.</td><td>البدء بتخصص ضيق دون فهم المنظومة الكاملة.</td></tr>
+          <tr><td>ISO 31000</td><td>يحول المخاطر من مفهوم عام إلى طريقة عمل.</td><td>يجعل الامتثال لاحقاً مبنياً على أولويات المخاطر لا على قوائم جامدة.</td><td>إنتاج سياسات وإجراءات لا تعالج مخاطر حقيقية.</td></tr>
+          <tr><td>ISO 37301</td><td>يربط الالتزامات بالسياسات والإجراءات والضوابط.</td><td>يوفر مدخلات قوية لإطار الحوكمة المؤسسية.</td><td>كتابة سياسات عامة بلا مصدر التزام واضح.</td></tr>
+          <tr><td>ISO 37000</td><td>يجمع القرار والمسؤولية والقيمة داخل إطار حوكمة.</td><td>يمهّد لبناء نموذج تشغيل يحدد من يفعل ماذا وكيف يُقاس.</td><td>بقاء الحوكمة كمبادئ نظرية غير قابلة للتنفيذ.</td></tr>
+          <tr><td>Operating Model</td><td>يحول الحوكمة والمخاطر والامتثال إلى تشغيل يومي.</td><td>يجعل إدارة الحشود تطبيقاً مضبوطاً بالأدوار والإجراءات والمؤشرات.</td><td>وجود معرفة جيدة دون قدرة تنفيذية واضحة.</td></tr>
+          <tr><td>إدارة الحشود</td><td>تأتي كتطبيق تخصصي عالي الحساسية على كل ما سبق.</td><td>تنتج حزمة عملية ميدانية قابلة للاستخدام.</td><td>التعامل مع الحشود كمهارة ميدانية منفصلة عن الحوكمة والمخاطر.</td></tr>
+        </tbody>
+      </table>
+      <div class="mobileSeq" aria-label="عرض الجوال لجدول التسلسل">
+        <div class="seqCard"><h3>GRCP</h3><div class="seqItem"><b>لماذا يأتي هنا؟</b>يعطي الصورة العامة للعلاقة بين الحوكمة والمخاطر والامتثال.</div><div class="seqItem"><b>كيف يجعل المرحلة التالية أسهل؟</b>يجعل دراسة المخاطر والامتثال مفهومة ضمن سياق واحد.</div><div class="seqItem"><b>الخطر إذا تجاوزناه</b>البدء بتخصص ضيق دون فهم المنظومة الكاملة.</div></div>
+        <div class="seqCard"><h3>ISO 31000</h3><div class="seqItem"><b>لماذا يأتي هنا؟</b>يحول المخاطر من مفهوم عام إلى طريقة عمل.</div><div class="seqItem"><b>كيف يجعل المرحلة التالية أسهل؟</b>يجعل الامتثال لاحقاً مبنياً على أولويات المخاطر لا على قوائم جامدة.</div><div class="seqItem"><b>الخطر إذا تجاوزناه</b>إنتاج سياسات وإجراءات لا تعالج مخاطر حقيقية.</div></div>
+        <div class="seqCard"><h3>ISO 37301</h3><div class="seqItem"><b>لماذا يأتي هنا؟</b>يربط الالتزامات بالسياسات والإجراءات والضوابط.</div><div class="seqItem"><b>كيف يجعل المرحلة التالية أسهل؟</b>يوفر مدخلات قوية لإطار الحوكمة المؤسسية.</div><div class="seqItem"><b>الخطر إذا تجاوزناه</b>كتابة سياسات عامة بلا مصدر التزام واضح.</div></div>
+        <div class="seqCard"><h3>ISO 37000</h3><div class="seqItem"><b>لماذا يأتي هنا؟</b>يجمع القرار والمسؤولية والقيمة داخل إطار حوكمة.</div><div class="seqItem"><b>كيف يجعل المرحلة التالية أسهل؟</b>يمهّد لبناء نموذج تشغيل يحدد من يفعل ماذا وكيف يُقاس.</div><div class="seqItem"><b>الخطر إذا تجاوزناه</b>بقاء الحوكمة كمبادئ نظرية غير قابلة للتنفيذ.</div></div>
+        <div class="seqCard"><h3>Operating Model</h3><div class="seqItem"><b>لماذا يأتي هنا؟</b>يحول الحوكمة والمخاطر والامتثال إلى تشغيل يومي.</div><div class="seqItem"><b>كيف يجعل المرحلة التالية أسهل؟</b>يجعل إدارة الحشود تطبيقاً مضبوطاً بالأدوار والإجراءات والمؤشرات.</div><div class="seqItem"><b>الخطر إذا تجاوزناه</b>وجود معرفة جيدة دون قدرة تنفيذية واضحة.</div></div>
+        <div class="seqCard"><h3>إدارة الحشود</h3><div class="seqItem"><b>لماذا يأتي هنا؟</b>تأتي كتطبيق تخصصي عالي الحساسية على كل ما سبق.</div><div class="seqItem"><b>كيف يجعل المرحلة التالية أسهل؟</b>تنتج حزمة عملية ميدانية قابلة للاستخدام.</div><div class="seqItem"><b>الخطر إذا تجاوزناه</b>التعامل مع الحشود كمهارة ميدانية منفصلة عن الحوكمة والمخاطر.</div></div>
+      </div>
+      <div class="ok"><strong>الخلاصة:</strong> الترتيب المقترح يقلل التشتت، ويجعل كل شهادة تضيف طبقة عملية فوق السابقة، حتى يتحول المسار إلى قدرة مؤسسية لا مجرد شهادات.</div>
+    </section>
+
+    <section class="section">
+      <h2>4) تفاصيل محطات المسار</h2>
+
+      <div class="station">
+        <div class="stationHead"><div class="badge">1</div><h3>GRCP — محترف الحوكمة والمخاطر والامتثال</h3></div>
+        <div class="stationBody">
+          <div class="kv">
+            <div class="mini"><b>التعريف</b><p>مرحلة تأسيسية لفهم منظومة GRC؛ أي العلاقة بين الحوكمة، إدارة المخاطر، الامتثال، الضوابط، الأداء، والأخلاقيات.</p><ul><li>ليست حوكمة فقط.</li><li>ليست امتثال فقط.</li><li>هي لغة مشتركة لإدارة المنظومة.</li></ul></div>
+            <div class="mini"><b>الاستخدام</b><p>تستخدم عند بناء السياسات والإجراءات وربطها بالمخاطر والالتزامات والضوابط.</p><ul><li>تصميم إطار GRC أولي.</li><li>تحليل فجوات الحوكمة.</li><li>ربط الإجراءات بالضوابط.</li></ul></div>
+            <div class="mini"><b>الثمرة</b><p>مخرج عملي يوضح العلاقة بين السياسة والخطر والضابط والامتثال والمؤشر.</p><ul><li>قاموس مصطلحات.</li><li>خريطة GRC.</li><li>نموذج تقييم أولي.</li></ul></div>
+            <div class="mini"><b>الأثر</b><p>توحيد لغة العمل بين الإدارة والعمليات والجودة والمخاطر والامتثال.</p><ul><li>تقليل التداخل.</li><li>رفع وضوح المسؤوليات.</li><li>تحسين جودة القرار.</li></ul></div>
+            <div class="mini"><b>العائد</b><p>تمنح أساساً سريعاً ومباشراً يجعل بقية المسار مفهوماً ومترابطاً.</p><ul><li>عائد مهني: لغة استشارية.</li><li>عائد مؤسسي: إطار ربط واضح.</li></ul></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="station">
+        <div class="stationHead"><div class="badge">2</div><h3>ISO 31000 — إدارة المخاطر</h3></div>
+        <div class="stationBody">
+          <div class="kv">
+            <div class="mini"><b>التعريف</b><p>مرحلة تحويل المخاطر من مصطلح عام إلى نظام عمل يحدد السياق، المعايير، التقييم، المعالجة، المتابعة، والتواصل.</p></div>
+            <div class="mini"><b>الاستخدام</b><p>تستخدم في تقييم المخاطر التشغيلية، مخاطر السياسات، مخاطر الامتثال، ومخاطر إدارة الحشود.</p><ul><li>قبل اعتماد إجراء جديد.</li><li>قبل تشغيل فعالية أو موسم.</li><li>عند تحليل نقاط الفشل.</li></ul></div>
+            <div class="mini"><b>الثمرة</b><p>سجل مخاطر حيّ ومصفوفة تقييم وخطة معالجة ومسارات تصعيد.</p><ul><li>Risk Register.</li><li>Risk Matrix.</li><li>Treatment Plan.</li></ul></div>
+            <div class="mini"><b>الأثر</b><p>تحويل القرارات من رد فعل إلى قرار مبني على احتمال وأثر وضوابط.</p><ul><li>تحسين الاستعداد.</li><li>تقليل المفاجآت.</li><li>رفع جودة الأولويات.</li></ul></div>
+            <div class="mini"><b>العائد</b><p>كل سياسة أو إجراء يصبح له سبب وقائي واضح، وليس مجرد توثيق إداري.</p><ul><li>عائد مهني: قدرة تحليلية أقوى.</li><li>عائد مؤسسي: قرارات أكثر أماناً.</li></ul></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="station">
+        <div class="stationHead"><div class="badge">3</div><h3>ISO 37301 — إدارة الامتثال</h3></div>
+        <div class="stationBody">
+          <div class="kv">
+            <div class="mini"><b>التعريف</b><p>مرحلة بناء نظام يترجم الأنظمة واللوائح والتعليمات إلى التزامات واضحة، ثم يربطها بسياسات وإجراءات وأدلة إثبات.</p></div>
+            <div class="mini"><b>الاستخدام</b><p>تستخدم عند التعامل مع متطلبات الجهات الرقابية، التعاميم، السياسات الحكومية، الالتزامات الداخلية، ومتطلبات السلامة والتشغيل.</p></div>
+            <div class="mini"><b>الثمرة</b><p>مصفوفة امتثال تربط: المصدر النظامي ← الالتزام ← السياسة ← الإجراء ← الدليل ← المسؤول.</p><ul><li>Compliance Matrix.</li><li>Obligations Register.</li><li>Evidence File.</li></ul></div>
+            <div class="mini"><b>الأثر</b><p>تقليل فجوات الالتزام وتحويل الامتثال إلى نظام متابعة لا إلى اجتهادات شخصية.</p><ul><li>وضوح المطلوب.</li><li>سهولة المراجعة.</li><li>تحسين الجاهزية.</li></ul></div>
+            <div class="mini"><b>العائد</b><p>يرفع قيمة السياسات لأنها تصبح مبنية على مصدر التزام واضح، ويمكن الدفاع عنها عند المساءلة.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="station">
+        <div class="stationHead"><div class="badge">4</div><h3>ISO 37000 — الحوكمة المؤسسية</h3></div>
+        <div class="stationBody">
+          <div class="kv">
+            <div class="mini"><b>التعريف</b><p>مرحلة متقدمة لفهم كيف تُدار المنظمة من حيث القرار، القيمة، المسؤولية، السلوك، الشفافية، المساءلة، والاستدامة.</p></div>
+            <div class="mini"><b>الاستخدام</b><p>تستخدم عند بناء أطر الحوكمة، تحديد صلاحيات القرار، تشكيل اللجان، بناء مواثيق، وتصميم مؤشرات حوكمة.</p></div>
+            <div class="mini"><b>الثمرة</b><p>إطار حوكمة مؤسسي يحدد طبقات القرار والمسؤوليات وآليات المتابعة والتصعيد.</p><ul><li>Governance Framework.</li><li>Decision Rights.</li><li>Accountability Model.</li></ul></div>
+            <div class="mini"><b>الأثر</b><p>تحويل الحوكمة من نصوص عامة إلى نظام قرار ومسؤولية ومساءلة.</p><ul><li>وضوح من يعتمد.</li><li>وضوح من ينفذ.</li><li>وضوح من يتابع.</li></ul></div>
+            <div class="mini"><b>العائد</b><p>يعطي المسار ثقلاً مؤسسياً؛ لأن المخرجات لا تبقى في مستوى الإجراءات بل ترتبط بالقرار والحوكمة العليا.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="station">
+        <div class="stationHead"><div class="badge">5</div><h3>Business Architecture / Operating Model — هندسة النموذج التشغيلي</h3></div>
+        <div class="stationBody">
+          <div class="kv">
+            <div class="mini"><b>التعريف</b><p>مرحلة تحويل الحوكمة والمخاطر والامتثال إلى طريقة عمل يومية: قدرات، خدمات، عمليات، أدوار، مؤشرات، واجتماعات متابعة.</p></div>
+            <div class="mini"><b>الاستخدام</b><p>تستخدم عندما تكون المشكلة ليست في نقص السياسات، بل في عدم وجود نموذج تشغيل يربط الاستراتيجية بالتنفيذ.</p></div>
+            <div class="mini"><b>الثمرة</b><p>نموذج تشغيل واضح يحدد: ماذا نقدم؟ من المسؤول؟ كيف تتم العملية؟ كيف نقيس؟ كيف نصعّد؟</p><ul><li>Capability Map.</li><li>Service Model.</li><li>Process Architecture.</li></ul></div>
+            <div class="mini"><b>الأثر</b><p>منع تفكك الجهود وتحويل الوثائق إلى منظومة عمل قابلة للتكرار والتطوير.</p></div>
+            <div class="mini"><b>العائد</b><p>هنا ينتقل الدور من إعداد سياسات وإجراءات إلى هندسة نظم مؤسسية متكاملة.</p><ul><li>عائد مهني: تميّز استشاري.</li><li>عائد مؤسسي: نظام تشغيل واضح.</li></ul></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="station">
+        <div class="stationHead"><div class="badge">6</div><h3>إدارة الحشود — تطبيق تخصصي نهائي</h3></div>
+        <div class="stationBody">
+          <div class="kv">
+            <div class="mini"><b>التعريف</b><p>تخصص تطبيقي لإدارة حركة وتدفق وسلامة الحشود في البيئات عالية الكثافة مثل الحج والعمرة والفعاليات والمرافق الكبرى.</p></div>
+            <div class="mini"><b>الاستخدام</b><p>يستخدم في التخطيط المسبق، تشغيل المواقع، إدارة التدفقات، الاستجابة للطوارئ، التنسيق بين الفرق، ورفع الجاهزية الميدانية.</p></div>
+            <div class="mini"><b>الثمرة</b><p>منظومة إدارة حشود مبنية على ما سبق: حوكمة، مخاطر، امتثال، تشغيل.</p><ul><li>سياسة إدارة حشود.</li><li>SOP.</li><li>خطة تصعيد واتصال.</li><li>مؤشرات سلامة.</li></ul></div>
+            <div class="mini"><b>الأثر</b><p>رفع جودة الاستعداد والتنسيق وتقليل المخاطر التشغيلية في البيئات الحساسة.</p></div>
+            <div class="mini"><b>العائد</b><p>تطبيق مباشر وقابل للعرض أمام الإدارة؛ لأنه يربط الشهادات باحتياج عملي واضح داخل بيئة العمل.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>5) الخطة الزمنية المقترحة — 12 شهر</h2>
+      <div class="timeline">
+        <div class="month"><div class="m">الشهر 1–2</div><div class="d"><strong>GRCP:</strong> دراسة المفاهيم وبناء قاموس مصطلحات وخريطة ربط بين السياسة والخطر والضابط والامتثال والمؤشر.</div></div>
+        <div class="month"><div class="m">الشهر 3–4</div><div class="d"><strong>ISO 31000:</strong> بناء سجل مخاطر ومصفوفة تقييم وخطة معالجة، مع تطبيق أولي على ملف إدارة الحشود أو أحد الإجراءات الحالية.</div></div>
+        <div class="month"><div class="m">الشهر 5–6</div><div class="d"><strong>ISO 37301:</strong> بناء سجل التزامات ومصفوفة امتثال وربطها بالسياسات والإجراءات وأدلة الإثبات.</div></div>
+        <div class="month"><div class="m">الشهر 7–8</div><div class="d"><strong>ISO 37000:</strong> تصميم إطار حوكمة مصغر يتضمن الصلاحيات والمسؤوليات وآليات المتابعة ومؤشرات الحوكمة.</div></div>
+        <div class="month"><div class="m">الشهر 9–10</div><div class="d"><strong>Operating Model:</strong> تحويل الإطار إلى نموذج تشغيل: خدمات، أدوار، عمليات، مؤشرات، اجتماعات، ومسارات قرار.</div></div>
+        <div class="month"><div class="m">الشهر 11–12</div><div class="d"><strong>إدارة الحشود:</strong> تطبيق تخصصي ينتج سياسة، SOP، خطة تصعيد، RACI، سجل مخاطر حشود، ومؤشرات جاهزية.</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>6) مخرجات عملية مقترحة للجهة</h2>
+      <div class="grid2">
+        <div class="box"><strong>حزمة الحوكمة</strong><ul><li>إطار حوكمة مختصر</li><li>مصفوفة صلاحيات وقرارات</li><li>نموذج مساءلة ومتابعة</li><li>مؤشرات حوكمة</li></ul></div>
+        <div class="box"><strong>حزمة المخاطر والامتثال</strong><ul><li>سجل مخاطر</li><li>مصفوفة امتثال</li><li>ملف أدلة امتثال</li><li>مصفوفة ضوابط</li></ul></div>
+        <div class="box"><strong>حزمة التشغيل</strong><ul><li>نموذج تشغيل</li><li>إجراءات SOP</li><li>RACI للأدوار والمسؤوليات</li><li>لوحة مؤشرات متابعة</li></ul></div>
+        <div class="box"><strong>حزمة إدارة الحشود</strong><ul><li>سياسة إدارة الحشود</li><li>SOP لإدارة الحشود</li><li>خطة تصعيد واتصال</li><li>نموذج جاهزية موقع وبلاغ Near Miss</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>7) لماذا هذا المسار ليس مجرد شهادات؟</h2>
+      <p class="lead">الفرق الجوهري أن كل محطة في المسار تنتج قدرة عملية قابلة للاستخدام داخل العمل. الشهادة هنا ليست نهاية المرحلة، بل دليل على اكتساب منهجية يمكن تحويلها إلى وثائق، قوالب، إجراءات، ومؤشرات.</p>
+      <div class="resultFlow">
+        <div class="flowNode">الشهادة</div>
+        <div class="flowNode">المعرفة</div>
+        <div class="flowNode">المنهجية</div>
+        <div class="flowNode">القوالب</div>
+        <div class="flowNode">التطبيق</div>
+        <div class="flowNode">الأثر المؤسسي</div>
+        <div class="flowNode">مهندس نظم مؤسسية</div>
+      </div>
+      <div class="why"><strong>الرسالة التنفيذية:</strong> الاستثمار في هذا المسار لا يستهدف زيادة عدد الشهادات، بل بناء قدرة داخلية على تصميم منظومات حوكمة وتشغيل ومخاطر وامتثال قابلة للتكرار والتطوير.</div>
+    </section>
+
+    <section class="section">
+      <h2>8) القرار المطلوب</h2>
+      <div class="decision">
+        <strong>المقترح:</strong> اعتماد المسار كتصور تأهيلي مبدئي، ثم اختيار أول محطة للتنفيذ وفق ما يخدم احتياج العمل الحالي. لا يتم التعامل مع المسار كدورات منفصلة، بل كمبادرة تطوير قدرات ينتج عنها أدوات عملية قابلة للاستخدام داخل الجهة.
+        <br><br>
+        <strong>الخطوة الأولى المقترحة:</strong> البدء بمحطة GRCP لأنها تجمع الحوكمة والمخاطر والامتثال، ثم الانتقال إلى إدارة المخاطر ISO 31000 لاستخدامها كجسر مباشر نحو إدارة الحشود.
+      </div>
+    </section>
+
+    <div class="footer">تم إعداد هذا التصور بواسطة: أنس العضيبي — بهدف تحويل الشهادات المهنية إلى أثر تطبيقي داخل بيئة العمل.</div>
+  </main>
+</body>
+</html>
